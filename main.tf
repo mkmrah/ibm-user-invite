@@ -4,7 +4,7 @@ resource ibm_iam_user_invite "invite_user"{
 }
 
 resource null_resource "env_script" {
-    provisioner local_exec {
+    provisioner "local_exec" {
         command = "printenv"
 
     }
